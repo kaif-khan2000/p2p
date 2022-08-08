@@ -17,14 +17,13 @@ class Read extends Thread {
 	public void run(){
 		try{
 			while(true){
-				System.out.println("reading");
 				String msg = in.readLine();
-				System.out.println("done reading");
 				if(msg.equals("close")){
 					System.out.println("Server has closed the connection");
 					break;
 				}
-				System.out.println("server: "+msg);
+				System.out.println("otherUser: "+msg);
+				System.out.print(">>");
 			}
 		}catch(Exception e){
 			System.out.println(e);
