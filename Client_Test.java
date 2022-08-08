@@ -1,5 +1,9 @@
+import java.util.*;
+import java.io.*;
 class Client_Test {
 	public static void main(String[] args){
-		Client c = new Client("127.0.0.1",5454); 
+		Console console = System.console();
+		String ip = console.readLine("Enter ip: ");
+		Client c = new Client(ip,5454); 
 	}
 }
