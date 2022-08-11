@@ -78,7 +78,7 @@ public class ServerGui extends Thread {
     }
 
     // GUI declarations.
-    public static JFrame f = new JFrame("Server");
+    public static JFrame f = new JFrame("P2P Chat");
     public static JComboBox menu = new JComboBox(ip);
     public static JButton b = new JButton("Send");
     public static JTextArea textArea = new JTextArea(20, 30);
